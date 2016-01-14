@@ -3,12 +3,13 @@ $(document).ready(function() {
       var age = parseInt($("input#age").val());
       var activity = $("select#activity").val();
       var beach = $("select#beach").val();
+      var kauaiArray = ["Kauai, Hawaii ; " , "Baia do Sancho, Brazil ; " , "Bora, Bora, Polynesia "];
 
       if (age < 40) {
         if (activity === "restful") {
           if (beach === "tropical") {
-            var name = "Kauai, Hawaii"
-            $("#vacationName").empty().append(name);
+            
+            $("#vacationName").empty().append(kauaiArray);
             $("#result").show();
           } else {
             var name = "Big Sur, California"
