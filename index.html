@@ -7,10 +7,34 @@
     <script src="js/app.js"></script>
     <meta charset="utf-8">
     <meta name="description" content="Welcome to vacation finder, your guide to your next vacation"/>
-    <title>Michael Schennum</title>
+    <title>Dream Vacation</title>
   </head>
   <body>
-  
+    <div class="container">
+      <h1>Where should you take your next vacation?</h1>
+      <h3>Enter in information about your dream vacation.</h3>
+
+      <form id="vacation">
+        <label for="age">Your Age:</label>
+        <input id="age" type="text">
+        <label for="activity">Activity Level:</label>
+        <select id="activity">
+          <option value="active">Active</option>
+          <option value="restful">Restful</option>
+        </select>
+        <label for="beach">Choose Beach Type:</label>
+        <select id="beach">
+          <option value="tropical">Tropical</option>
+          <option value="coastal">Coastal</option>
+        </select>
+
+        <button type="submit" class="btn btn-success">Suggest My Vacations</button>
+      </form>
+
+      <div id="result">
+        <p>Some ideal vacation destinations would be <span id="vacationName"></span>.</p>
+      </div>
+    </div>
   
   </body>
 </html>

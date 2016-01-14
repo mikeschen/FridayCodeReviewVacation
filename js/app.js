@@ -1,50 +1,50 @@
 $(document).ready(function() {
-    $("form#celebrity").submit(function(event) {
+    $("form#vacation").submit(function(event) {
       var age = parseInt($("input#age").val());
-      var gender = $("select#gender").val();
-      var personality = $("select#personality").val();
+      var activity = $("select#activity").val();
+      var beach = $("select#beach").val();
 
       if (age < 40) {
-        if (gender === "male") {
-          if (personality === "funny") {
-            var name = "Ryan Gosling"
-            $("#celebrityName").empty().append(name);
+        if (activity === "restful") {
+          if (beach === "tropical") {
+            var name = "Kauai, Hawaii"
+            $("#vacationName").empty().append(name);
             $("#result").show();
           } else {
-            var name = "Adam Driver"
-            $("#celebrityName").empty().append(name);
+            var name = "Big Sur, California"
+            $("#vacationName").empty().append(name);
             $("#result").show();
           }
         } else {
-          if (personality === "funny") {
-            var name = "Jennifer Lawrence"
-            $("#celebrityName").empty().append(name);
+          if (beach === "tropical") {
+            var name = "Phuket, Thailand"
+            $("#vacationName").empty().append(name);
             $("#result").show();
           } else {
-            var name = "Emma Watson"
-            $("#celebrityName").empty().append(name);
+            var name = "Santa Cruz, California"
+            $("#vacationName").empty().append(name);
             $("#result").show();
           }
         }
       } else if (age >= 40) {
-        if (gender === "male") {
-          if (personality === "funny") {
-            var name = "Bill Murray"
-            $("#celebrityName").empty().append(name);
+        if (activity === "restful") {
+          if (beach === "tropical") {
+            var name = "Aruba"
+            $("#vacationName").empty().append(name);
             $("#result").show();
           } else {
-            var name = "Sean Penn"
-            $("#celebrityName").empty().append(name);
+            var name = "Miami, Florida"
+            $("#vacationName").empty().append(name);
             $("#result").show();
           }
       } else {
-        if (personality === "funny") {
-            var name = "Tina Fey"
-            $("#celebrityName").empty().append(name);
+        if (beach === "tropical") {
+            var name = "Railay, Thailand"
+            $("#vacationName").empty().append(name);
             $("#result").show();
         } else {
-            var name = "Helen Hunt"
-            $("#celebrityName").empty().append(name);
+            var name = "Puerto Vallarta, Mexico"
+            $("#vacationName").empty().append(name);
             $("#result").show();
             }
         }
