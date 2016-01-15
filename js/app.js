@@ -7,7 +7,7 @@ $(document).ready(function() {
       var altitude = $("select#altitude").val();
       var total = 0;
      
-      var activityArray = ["Thailand, Puerto Vallarta, Aruba", "Cambodia, Egypt, Jordan", "London, Paris, Bangkok", "New Delhi, South Africa, Mexico", "Tibet, Kenya, Peru"];
+      var activityArray = ["London, Paris, Bangkok", "Thailand, Puerto Vallarta, Aruba", "Cambodia, Egypt, Jordan", "New Delhi, South Africa, Mexico", "Tibet, Kenya, Peru"];
       var arrayFields = [activity, adventure, relax, budget, altitude];
       for (i = 1; i < arrayFields.length; i++) {
         if (arrayFields[i] == "true") {
