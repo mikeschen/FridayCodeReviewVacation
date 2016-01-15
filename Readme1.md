@@ -1,20 +1,20 @@
-# Personal Portfolio Website
+# Vacation Planner App
 
-#### Website Portfolio for Michael Schennum, 01.08.2016
+#### Vacation Planner App, 01.08.2016
 
 #### By Michael Schennum
 
 ## Description
 
-This website is to showcase my portfolio of websites and web apps. This site is an exercise in HTML, CSS and Bootstrap.
+This app will help users pick their dream vacation from a series of five questions. It returns three suggestions.
 
 ## Setup/Installation Requirements
 
-Load index.html into browser or go online to http://mikeschen.github.io/
+Load index.html into browser
 
 ## Known Bugs
 
-Some issues with older browers, notably IE 6 and 8.
+No known bugs.
 
 ## Support and contact details
 
@@ -25,6 +25,7 @@ HTML
 CSS
 Bootstrap
 JQuery
+Javascript
 
 ### Legal
 Copyright (c) 2016 **Michael Schennum
