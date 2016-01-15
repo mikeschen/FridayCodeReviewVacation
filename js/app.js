@@ -1,59 +1,23 @@
 $(document).ready(function() {
     $("form#vacation").submit(function(event) {
-      var age = parseInt($("input#age").val());
       var activity = $("select#activity").val();
-      var beach = $("select#beach").val();
-      var kauaiArray = ["Kauai, Hawaii ; " , "Baia do Sancho, Brazil ; " , "Bora, Bora, Polynesia "];
-
-      if (age < 40) {
-        if (activity === "restful") {
-          if (beach === "tropical") { 
-
-            //add for loop somehow below, maybe in li
-
-            $("#vacationName").empty().append(kauaiArray);
-            $("#result").show();
-          } else {
-            var name = "Big Sur, California"
-            $("#vacationName").empty().append(name);
-            $("#result").show();
-          }
-        } else {
-          if (beach === "tropical") {
-            var name = "Phuket, Thailand"
-            $("#vacationName").empty().append(name);
-            $("#result").show();
-          } else {
-            var name = "Santa Cruz, California"
-            $("#vacationName").empty().append(name);
-            $("#result").show();
-          }
+      var adventure = $("select#adventure").val();
+      var relax = $("select#relax").val();
+      var budget = $("select#budget").val();
+      var altitude = $("select#altitude").val();
+      var total = 0;
+     
+      var activityArray = ["Thailand, Puerto Vallarta, Aruba", "Cambodia, Egypt, Jordan", "London, Paris, Bangkok", "New Delhi, South Africa, Mexico", "Tibet, Kenya, Peru"];
+      var arrayFields = [activity, adventure, relax, budget, altitude];
+      for (i = 1; i < arrayFields.length; i++) {
+        if (arrayFields[i] == "true") {
+           total = total + 1;
         }
-      } else if (age >= 40) {
-        if (activity === "restful") {
-          if (beach === "tropical") {
-            var name = "Aruba"
-            $("#vacationName").empty().append(name);
-            $("#result").show();
-          } else {
-            var name = "Miami, Florida"
-            $("#vacationName").empty().append(name);
-            $("#result").show();
-          }
-      } else {
-        if (beach === "tropical") {
-            var name = "Railay, Thailand"
-            $("#vacationName").empty().append(name);
-            $("#result").show();
-        } else {
-            var name = "Puerto Vallarta, Mexico"
-            $("#vacationName").empty().append(name);
-            $("#result").show();
-            }
-        }
-      } else {
-          alert("Please enter your age");
-        }
+      }
+      
+        $("#vacationName").empty().append(activityArray[total]);
+        $("#result").show();
+
         event.preventDefault();
-    })
+    });
 });
