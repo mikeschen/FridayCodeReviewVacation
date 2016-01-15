@@ -7,8 +7,10 @@ $(document).ready(function() {
 
       if (age < 40) {
         if (activity === "restful") {
-          if (beach === "tropical") {
-            
+          if (beach === "tropical") { 
+
+            //add for loop somehow below, maybe in li
+
             $("#vacationName").empty().append(kauaiArray);
             $("#result").show();
           } else {
